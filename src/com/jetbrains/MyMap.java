@@ -1,6 +1,6 @@
 package com.jetbrains;
 
-public class MyMap {
+public class MyMap<K, V> {
     int count = 0;
 
     public int getCount() {
@@ -12,7 +12,7 @@ public class MyMap {
     }
 
     public static void main(String[] args) {
-        MyMap myMap = new MyMap();
+        MyMap<Integer, String> myMap = new MyMap<Integer, String>();
         System.out.println(myMap.getCount());
     }
 }
